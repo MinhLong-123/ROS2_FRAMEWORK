@@ -1,0 +1,8 @@
+Running robot in Gazebo:
+- ros2 launch ros_mobile_robot display.launch.py use_sim_time:=true run the robot urdf and robot state publisher with sim time (remember to ros2 run joint_state_publisher_gui joint_state_publisher_gui)
+- ros2 launch gazebo_ros gazebo.launch.py to launch gazebo
+- ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity LongBot to spawn our robot through robot_description topic 
+- three of those in launch file launch_sim.launch.py
+- use ros2_control library to handle control code => work for both simulated robot and real robot
+- create plugin of our robot
+- ros2 run teleop_twist_keyboard to remote control the robot in gazebo

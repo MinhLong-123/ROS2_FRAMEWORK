@@ -1,0 +1,6 @@
+- robot-state-publisher: This package takes joint angles/ displacements as inputs and publishes 3D poses of the robot links using a kinemtatic tree of the robot. The state of robot is published to tf2
+- tf2: is a transform library that is used to keep track of the relationship between coordinate frames over time. It maintains a tree structure describing the relationship between coordinate frames. This library also helps us to transform vecotrs, points, or any quantities between 2 different frames.
+- joint-state-publisher: this package is used to publish joint states. It publishes messages of the type sensor_msgs/JointState.
+- joint-state-publisher-gui: this package is used to graphically set and publish joint state values for a given URDF model
+- When running other nodes with Gazebo => remember to use sim time to tell nodes to use time synchronized with gazebo (if not things will get out of sync)
+=> running robot state publisher with sim time
